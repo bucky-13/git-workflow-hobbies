@@ -1,10 +1,12 @@
-const gamesContainer = document.querySelector('#gamesContainer');
+export function displayGamesList() {
+  const gamesContainer = document.querySelector('#gamesContainer');
 
-export function displayGames() {
-  let gamesSection = `<ul>
+  let gamesList = document.createElement('ul');
+  gamesList.innerHTML = `
   <li>Elder Scrolls Online</li>
   <li>Baldur's Gate 3</li>
   <li>Valheim</li>
-  </ul>`;
-  gamesContainer.append(gamesSection);
+  `;
+
+  gamesContainer.append(gamesList);
 }

@@ -1,8 +1,8 @@
 import './style.css';
-import { displayGamesList } from '../counter.js';
+import { displayGamesList } from './js/games.js';
 
 document.querySelector('#app').innerHTML = `
-  <div class="gamesContainer">
+  <div class="gamesContainer" id="gamesContainer">
     <h2>List of Games</h2>
   </div>
 `;
