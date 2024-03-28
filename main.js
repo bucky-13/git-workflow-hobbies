@@ -1,8 +1,8 @@
 import './style.css';
 import { displayGamesList } from './js/games.js';
 
-const displayGamesSection = document.querySelector('displayGamesSection');
-const displayAboutSection = document.querySelector('displayAboutSection');
+const displayGamesSection = document.querySelector('#displayGamesSection');
+const displayAboutSection = document.querySelector('#displayAboutSection');
 
 document.querySelector('#app').innerHTML = `
   <div class="gamesContainer" id="gamesContainer">
