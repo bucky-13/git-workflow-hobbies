@@ -3,7 +3,7 @@ const app = document.querySelector('#app');
 export function renderAboutSection() {
   app.innerHTML = '';
   let h2 = document.createElement('h2');
-  h2.textContent = 'About this page';
+  h2.textContent = 'About this nice page';
 
   let p = document.createElement('p');
   p.textContent =
