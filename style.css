@@ -62,7 +62,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px dashed solid black;
+  border: 1px solid #cc0000;
   border-radius: 16px;
   padding: 2rem;
   background-color: #cc000020;
