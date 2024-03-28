@@ -1,5 +1,6 @@
 import './style.css';
 import { displayGamesList } from './js/games.js';
+import { renderAboutSection } from './js/about.js';
 
 const displayGamesSection = document.querySelector('#displayGamesSection');
 const displayAboutSection = document.querySelector('#displayAboutSection');
