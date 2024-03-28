@@ -1,9 +1,9 @@
 const app = document.querySelector('#app');
 
-export function displayAboutSection() {
+export function renderAboutSection() {
   app.innerHTML = '';
-  let abouth2 = document.createElement('h2');
+  let h2 = document.createElement('h2');
   h2.textContent = 'About this page';
 
-  app.append(abouth2);
+  app.append(h2);
 }
