@@ -1,20 +1,25 @@
 import './style.css';
 import { displayGamesList } from './js/games.js';
 
-const displayGamesSection = document.querySelector('displayGamesSection');
-const displayAboutSection = document.querySelector('displayAboutSection');
+const displayGamesSection = document.querySelector('#displayGamesSection');
+const displayAboutSection = document.querySelector('#displayAboutSection');
+const app = document.querySelector('#app');
 
-document.querySelector('#app').innerHTML = `
+function init() {
+  app.innerHTML = '';
+  app.innerHTML = `
   <div class="gamesContainer" id="gamesContainer">
     <h2>List of Games</h2>
   </div>
 `;
+  displayGamesList();
+}
 
 displayAboutSection.addEventListener('click', () => {
   renderAboutSection();
 });
 displayGamesSection.addEventListener('click', () => {
-  displayGamesList();
+  init();
 });
 
-displayGamesList();
+init();
