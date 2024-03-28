@@ -10,4 +10,11 @@ document.querySelector('#app').innerHTML = `
   </div>
 `;
 
+displayAboutSection.addEventListener('click', () => {
+  renderAboutSection();
+});
+displayGamesSection.addEventListener('click', () => {
+  displayGamesList();
+});
+
 displayGamesList();
